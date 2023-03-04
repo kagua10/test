@@ -1,0 +1,21 @@
+@mixin flex($al-items,$content, $gap){
+    display: flex;
+    align-items: $al-items;
+    justify-content: $content;
+    gap: $gap;
+    flex-wrap: wrap;
+}
+
+@mixin grid($al-cont, $content, $al-items, $just-items, $gap){
+    display: grid;
+    align-content: $al-cont;
+    justify-content: $content;
+    align-items: $al-items;
+    justify-items: $just-items;
+    gap: $gap;
+}
+
+@mixin container(){
+    margin: 0 auto;
+    padding: 0 15px;
+}
